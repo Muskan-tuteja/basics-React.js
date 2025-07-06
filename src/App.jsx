@@ -185,29 +185,51 @@
 // export default App
 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   const [name,setName]=useState('')
+//   const [password,setPassword]=useState('')
+//   const [email,setEmail]=useState('')
+//   return (
+//     <div>
+//       <h1>Controller Component</h1>
+//       <form action="" method='get'>
+//         <input type="text" onChange={(even)=>setName(even.target.value)} placeholder='Enyter Value' />
+//          <br></br> <br></br>
+//         <input type="text" placeholder='Enyter password' />
+//          <br></br> <br></br>
+//         <input type="text" placeholder='Enyter email' />
+//          <br></br> <br></br>
+//          <button>submit</button>
+//          <h3>{name}</h3>
+//          <h3>{password}</h3>
+//          <h3>{email}</h3>
+
+//       </form>
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
+import HandleCheckBoxes from './HandleCheckBoxes'
+import HandleRadio from './HandleRadio'
+import Loop from './Loop'
 
 const App = () => {
-  const [name,setName]=useState('')
-  const [password,setPassword]=useState('')
-  const [email,setEmail]=useState('')
   return (
     <div>
-      <h1>Controller Component</h1>
-      <form action="" method='get'>
-        <input type="text" onChange={(even)=>setName(even.target.value)} placeholder='Enyter Value' />
-         <br></br> <br></br>
-        <input type="text" placeholder='Enyter password' />
-         <br></br> <br></br>
-        <input type="text" placeholder='Enyter email' />
-         <br></br> <br></br>
-         <button>submit</button>
-         <h3>{name}</h3>
-         <h3>{password}</h3>
-         <h3>{email}</h3>
-
-      </form>
-      
+      <h1>1 Handle Checkbox in React.js</h1>
+      <HandleCheckBoxes/>
+      <h1>2 Handle Radio and Dropdown</h1>
+      <HandleRadio/>
+       <h1>3 Loop in JSX with Map Function</h1>
+      <Loop/>
+     
     </div>
   )
 }
